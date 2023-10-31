@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    background: #1f2157;
+    color: #f5c7f7;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+a:link {
+    color: #a393eb;
+    background-color: transparent;
+    text-decoration: underline;
+}
+ a:visited {
+    color: #f5c7f7;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: #926aaa;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#main-container {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+}
+
+#background {
+    background-image: url("gabriel-kraus-3X5ZhsDClY8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+}
+
+#banner {
+    /* outline:1px white solid; */
+    display: flex;
+    justify-content:center;
+    font-size: 50px;
+    margin-top: 25vh;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sub-container div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    padding-right: 150px;
+    flex: 1 1 0;
+}
+
+#input-box {
+    box-shadow: 0 1px 0 #000 inset;
+    background-color: #27296d;
+    box-shadow: 5px 5px 10px #15173d;
+}
+
+#logo {
+    width: auto;
+    display: block;
+    height: 100%;
+}
+
+#credit {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 40vw;
+    justify-content: center;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#temp-login-style {
+    color: #a393eb;
+    font-weight: bold;
+}
+
+#first-box {
+    justify-content: center;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1.17em;
+    font-weight: bolder;
+    ;
+    color: #f5c7f7;
+    margin-top: 50px;
+    line-height: 22px;
+    width: 280px;
+    height: 60px;
+    background-color: #4b4e92;
+    border-radius: 10px;
+    border: none;
+}
