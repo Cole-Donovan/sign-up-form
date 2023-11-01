@@ -60,16 +60,16 @@ a:active {
     overflow-y: auto;
 }
 
-.sub-container div {
+.sub-container > div {
     display: flex;
     flex-direction: column;
     padding-left: 70px;
     padding-right: 150px;
+    padding-top: 30px;
     flex: 1 1 0;
 }
 
 #input-box {
-    box-shadow: 0 1px 0 #000 inset;
     background-color: #27296d;
     box-shadow: 5px 5px 10px #15173d;
 }
@@ -94,6 +94,7 @@ a:active {
 #temp-login-style {
     color: #a393eb;
     font-weight: bold;
+    text-decoration: none;
 }
 
 #first-box {
@@ -104,13 +105,64 @@ button {
     font-family: inherit;
     font-size: 1.17em;
     font-weight: bolder;
-    ;
     color: #f5c7f7;
-    margin-top: 50px;
+    margin-top: 10px;
     line-height: 22px;
     width: 280px;
     height: 60px;
     background-color: #4b4e92;
     border-radius: 10px;
     border: none;
+    box-shadow: 2px 2px 4px #15173d;
+}
+
+.form-column {
+    flex-basis: 50%;
+}
+
+fieldset {
+    display: flex;
+    border: none;
+    margin:0;
+    padding:0;
+}
+
+#input-box p {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+button:active {
+    background-color: #474b8d;;
+    -webkit-transform: scale(0.99);
+    -ms-transform: scale(0.99);
+    transform: scale(0.99);
+}
+button:hover {
+    background-color: #3f427c;;
+}
+
+/* input boxes */
+input {
+    font-size: 16px;
+    color: #f5c7f7;
+    background-color: #1f2157;
+    border-color: #181a44;
+    border-style: solid;
+    width: 220px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+input:focus {   
+    border-color: #0f112c;
+    box-shadow: 3px 3px 6px #15173d;
+    outline: none;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #1f2157 inset !important;
+    -webkit-text-fill-color: #f5c7f7 !important;
 }

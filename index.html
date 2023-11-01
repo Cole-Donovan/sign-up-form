@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <form action="#">
     <div id="main-container">
         <!-- the image and the sidebar over it -->
         <div id="background">
@@ -15,30 +16,64 @@
                 <h1>Cole</h1>
             </div>
             <div id="credit">
-                Photo by &#20<a href="https://unsplash.com/@gabrielkraus" target="_blank" rel="noopener noreferrer">Gabriel Kraus</a>
+                Photo by &#20<a class="underline" href="https://unsplash.com/@gabrielkraus" target="_blank" rel="noopener noreferrer">Gabriel Kraus</a>
                 &#20 on &#20<a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a>
             </div>
         </div>
         <!-- contains header text, input area, and additional buttons -->
         <div class="sub-container">
-            <div class="box" id="first-box">
+            <div id="first-box">
                 <h2>This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
                 Sign up <i>now</i> to get started.</h2>
 
                 <h2>You know you want to.</h2>
             </div>
-            <div class="box" id="input-box">
-                <form action="example.com/path" method="post">
+            <div id="input-box">
+                <h2>Let's do this!</h2>
+                <fieldset>
+                    <div class="form-column">
+                        <div class="input">
+                            <p><label for="first_name">FIRST NAME</label><br/>
+                            <input type="text" name="first-name" id="first-name" required><br/></p>
+                        </div>
 
-                </form>
+                        <div class="input">
+                            <p><label for="user-email">EMAIL</label><br/>
+                            <input type="email" name="user-email" id="user-email" required><br/></p>
+                        </div>
+                        
+                        <div class="input">
+                            <p><label for="user-password">PASSWORD</label><br/>
+                            <input type="password" name="user-password" id="user-password" required><br/></p>
+                        </div>
+                    </div>
+
+                    <div class="form-column">
+                        <div class="input">
+                            <p><label for="last-name">LAST NAME</label><br/>
+                            <input type="text" name="last-name" id="last-name" required><br/></p>
+                        </div>
+
+                        <div class="input">
+                            <p><label for="phone-number">PHONE NUMBER</label><br/>
+                            <input type="text" name="phone-number" id="phone-number" required><br/></p>
+                        </div>
+
+                        <div class="input">
+                            <p><label for="confirm-password">CONFIRM PASSWORD</label><br/>
+                            <input type="password" name="confirm-password" id="confirm-password" required><br/></p>
+                        </div>
+                    </div>
+                </fieldset>
             </div>
-            <div class="box">
-                <button class="favorite styled" type="button">Create Account</button>
+            <div>
+                <button type="submit" id="">Create Account</button>
                 <br/>
-                <h3>Already have an account? <span id="temp-login-style">Log in</span></h3>
+                <h3>Already have an account? <a id="temp-login-style" href="#" rel="noopener noreferrer">Log in</a></h3>
             </div>
         </div>
     </div>
+</form>
 </body>
 </html>
